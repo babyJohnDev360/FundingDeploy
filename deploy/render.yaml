@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: mergefunding
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: node dist/main
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        fromDatabase:
+          name: mergefunding-db
+          property: connectionString
+    healthCheckPath: /api/health
+    autoDeploy: true 

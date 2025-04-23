@@ -1,0 +1,58 @@
+<h2 mat-dialog-title>User Details</h2>
+<mat-dialog-content>
+  <form [formGroup]="form">
+    <div class="row">
+      <div class="col-lg-6">
+        <mat-label>Name</mat-label>
+        <mat-form-field appearance="outline" class="w-100">
+          <input matInput formControlName="name" />
+        </mat-form-field>
+      </div>
+      <div class="col-lg-6">
+        <mat-label>Email</mat-label>
+        <mat-form-field appearance="outline" class="w-100">
+          <input matInput formControlName="email" />
+        </mat-form-field>
+      </div>
+      <div class="col-lg-6">
+        <mat-label>PAN Number</mat-label>
+        <mat-form-field appearance="outline" class="w-100">
+          <input matInput formControlName="panNumber" />
+        </mat-form-field>
+      </div>
+    </div>
+
+    <h3>Bank Details</h3>
+    <div formGroupName="bankDetails">
+      <div class="row">
+        <div class="col-lg-6">
+          <mat-label>Account Holder Name</mat-label>
+          <mat-form-field appearance="outline" class="w-100">
+            <input matInput formControlName="name" />
+          </mat-form-field>
+        </div>
+        <div class="col-lg-6">
+          <mat-label>Account Number</mat-label>
+          <mat-form-field appearance="outline" class="w-100">
+            <input matInput formControlName="accountNo" />
+          </mat-form-field>
+        </div>
+        <div class="col-lg-6">
+          <mat-label>Branch</mat-label>
+          <mat-form-field appearance="outline" class="w-100">
+            <input matInput formControlName="branch" />
+          </mat-form-field>
+        </div>
+        <div class="col-lg-6">
+          <mat-label>IFSC Code</mat-label>
+          <mat-form-field appearance="outline" class="w-100">
+            <input matInput formControlName="ifsc" />
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Close</button>
+</mat-dialog-actions>
