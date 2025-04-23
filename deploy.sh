@@ -27,7 +27,7 @@ npm run build
 cd ../backend
 cat > .env << EOL
 NODE_ENV=production
-MONGODB_URI=your_mongodb_uri
+MONGODB_URI=mongodb+srv://babyjohndev360:bf1vUqEJ6ikoHK3r@cluster0.tegwg.mongodb.net/fundApp
 PORT=4000
 JWT_SECRET=your_jwt_secret
 EOL
