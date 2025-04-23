@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Funding Pips Application",
   "scripts": {
-    "install:all": "npm install && cd backendFundingPips && npm install && cd ../FundingPipscopy && npm install",
-    "build:frontend": "cd FundingPipscopy && npm run build",
-    "build:backend": "cd backendFundingPips && nest build",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && nest build",
     "build": "npm run build:frontend && npm run build:backend",
-    "start": "cd backendFundingPips && npm run start:prod"
+    "start": "cd backend && npm run start:prod"
   }
 } 
