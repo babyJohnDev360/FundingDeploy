@@ -17,7 +17,7 @@ import { UserModule } from './user/user.module';
     MongooseModule.forRootAsync({
       imports: [ConfigModule],
       useFactory: async (configService: ConfigService) => ({
-        uri: 'mongodb+srv://babyjohndev360:bf1vUqEJ6ikoHK3r@cluster0.tegwg.mongodb.net/fundApp',
+        uri: "mongodb+srv://babyjohndev360:bf1vUqEJ6ikoHK3r@cluster0.tegwg.mongodb.net/fundApp",
       }),
       inject: [ConfigService],
     }),

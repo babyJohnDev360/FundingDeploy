@@ -69,8 +69,8 @@ pm2 start ecosystem.config.js
 Create a `.env` file in the backend directory with the following variables:
 ```
 NODE_ENV=production
-MONGODB_URI=your_mongodb_uri
-PORT=4000
+MONGODB_URI=mongodb+srv://babyjohndev360:bf1vUqEJ6ikoHK3r@cluster0.tegwg.mongodb.net/fundApp
+PORT=3001
 JWT_SECRET=your_jwt_secret
 ```
 
