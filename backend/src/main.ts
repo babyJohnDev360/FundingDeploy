@@ -16,7 +16,7 @@ async function bootstrap() {
   app.setGlobalPrefix('api');
 
   // Start the server
-  const port = 3001; // Changed default port to 3001
+  const port =  3001; // Changed default port to 3001
   await app.listen(port, async () => {
     console.log(`Server is running on port no. ${port}`);
   });
