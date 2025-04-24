@@ -7,6 +7,8 @@
     "build:frontend": "cd frontend && npm run build",
     "build:backend": "cd backend && nest build",
     "build": "npm run build:frontend && npm run build:backend",
-    "start": "cd backend && npm run start:prod"
+    "start": "cd backend && npm run start:prod",
+    "build:prod": "npm run install:all && npm run build && mkdir -p dist && cp -r frontend/dist/Flexy/* dist/ && cp -r backend/dist/* dist/ && cp backend/package.json dist/ && cp backend/.env dist/",
+    "start:prod": "cd dist && npm install --production && node main.js"
   }
 } 

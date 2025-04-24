@@ -22,7 +22,7 @@ import { UserModule } from './user/user.module';
       inject: [ConfigService],
     }),
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', '..', 'frontend', 'dist', 'flexy'),
+      rootPath: join(__dirname, '..', '..', 'frontend', 'dist', 'Flexy'),
       exclude: ['/api*'],
     }),
     AuthModule,
