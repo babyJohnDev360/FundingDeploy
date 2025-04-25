@@ -13,7 +13,7 @@ async function bootstrap() {
     });
     app.useGlobalPipes(new common_1.ValidationPipe());
     app.setGlobalPrefix('api');
-    const port =  3001;
+    const port = 3001;
     await app.listen(port, async () => {
         console.log(`Server is running on port no. ${port}`);
     });
